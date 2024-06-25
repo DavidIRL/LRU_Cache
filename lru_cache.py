@@ -1,4 +1,4 @@
-class LRU_Cache(capacity):
+class LRU_Cache:
     """
     LRU_Cache holds a cache of given capacity in order to reduce time-complexity.
     Useful for maintaining values that may be used repeatedly by multiple functions.    
@@ -57,24 +57,3 @@ if __name__ == '__main__':
   our_cache.set(6, 6)
 
   our_cache.get(3)      # returns -1 because the cache reached it's capacity and 3 was the least recently used entry
-
-## Test Case 1
-test_cache = LRU_Cache(6)
-
-test_cache.set(1, None);
-test_cache.set(2, 8);
-test_cache.set(3, -33);
-test_cache.set(4, 4);
-test_cache.set(5, 9000);
-
-test_cache.get(2)
-test_cache.get(5)
-test_cache.get(1)
-test_cache.get(4)
-
-test_cache.set(6, 1234);
-test_cache.set(7, 8675309);
-
-## Test Case 2
-
-## Test Case 3
